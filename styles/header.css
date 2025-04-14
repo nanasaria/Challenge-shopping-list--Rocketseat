@@ -1,0 +1,12 @@
+header {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5625rem;
+    margin-bottom: 1.75rem;
+  }
+}

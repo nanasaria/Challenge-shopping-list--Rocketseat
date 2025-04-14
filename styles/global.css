@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-primary: #f4f5fb;
+  --background-secondary: #ffffff;
+  --color-brand: #ca3884;
+  --color-brand-hover: #a52c6b;
+  --color-danger: #c93847;
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+  --always-white: #ffffff;
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
+  --ff: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--ff);
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: var(--ff);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+label {
+  font-family: var(--ff);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--ff);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--background-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin-inline: 23.125rem;
+  }
+}

@@ -1,0 +1,10 @@
+nav {
+  & > img {
+    padding-top: 2.125rem;
+    padding-bottom: 1rem;
+  }
+
+  & h1 {
+    padding-bottom: 2.75rem;
+  }
+}
