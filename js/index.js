@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 const ul = document.querySelector("ul");
+const alert = document.querySelector(".alert");
+const btnAlert = document.querySelector(".close-alert");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -25,6 +27,10 @@ ul.addEventListener("click", (event) => {
     const li = trashBtn.closest("li");
     deleteItem(li);
   }
+});
+
+btnAlert.addEventListener("click", () => {
+  closeAlert();
 });
 
 function createItem() {
@@ -109,4 +115,14 @@ function buttonChecked(check) {
 
 function deleteItem(li) {
   li.remove();
+  showAlert();
+  setTimeout(closeAlert, 3000);
+}
+
+function showAlert() {
+  return (alert.style.display = "flex");
+}
+
+function closeAlert() {
+  return (alert.style.display = "none");
 }
